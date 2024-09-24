@@ -10,7 +10,7 @@ def load_bip39_words(file_path):
     return words
 
 # Generate a list of random phrases
-def generate_random_phrases(words, num_phrases=5, num_words=12):
+def generate_random_phrases(words, num_phrases=5, num_words=24):
     return [' '.join(random.sample(words, num_words)) for _ in range(num_phrases)]
 
 if __name__ == "__main__":
